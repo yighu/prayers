@@ -1,0 +1,18 @@
+This folder contains the source file/code to generate the renewall applications. The final files are in scriptslists dir
+//This is the code to execute to generate the bible verses files
+
+ExtractVerseforaffirmation.groovy
+cp -fr scriptslists/ ../html5app/scripts/bible/
+For Sqlite version
+this is similar to:
+/Users/yiguanghu/ccim/hisstory/rawdata/README
+
+1.Install sqlite3
+	/usr/bin/sqlite3
+2. Download Sqlite driver from http://www.zentus.com/sqlitejdbc/
+	put it under ~/.groovy/lib
+3. run groovy ExtractVerseforaffirmation_sqlite.groovy
+
+this generate db/renewal.db
+groovy ConvertBibletxtto_sqlite.groovy
+cp db/renewal.db /Users/yiguanghu/Documents/Titanium Studio Workspace/facetoface/Resources/
